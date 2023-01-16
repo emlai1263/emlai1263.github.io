@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/a73e3eca-14e9-43b2-b458-e0b05f5961fc/image_2022-08-10_230939140.png?v=1660198180279" />
+
+    <title>Pokemon guesser</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <p>EL</p>
+      <div class="nav">
+        <p>
+          <a href="https://portfolio-8-2-22.glitch.me" target="_blank">Portfolio</a>
+        </p>
+      </div>
+      <div div class="nav">
+        <p>
+          <a href="instructions.html">Instructions</a>
+        </p>
+      </div>
+      <div div class="nav active">
+        <p>
+          <a href="#">Game</a>
+        </p>
+      </div>
+      <div div class="nav">
+        <p>
+          <a href="game2.html">Game #2</a>
+        </p>
+      </div>
+    </nav>
+    
+    
+
+    <input id="guessInput" />
+    <button id="submitButton" class="submitButton" onclick="submit('oshawott')">Submit</button>
+
+    <h3>Past guesses</h3>
+    <ul id="list">
+      <li id="guess3"></li>
+      <li id="guess2"></li>
+      <li id="guess1"></li>
+    </ul>
+    <p id="img"></p>
+
+    <div class="grid-container1">
+      <div>
+        <p>
+          <p id="hintsLeft"></p>
+        </p>
+      </div>
+      <div>
+        <p>
+          <p id="triesLeft"></p>
+        </p>
+      </div>
+    </div>
+    
+    <div class="grid-container">
+      <div class="grid-item item1">
+        <button id="button1" onclick="revealHint('Water', this.id)">Type</button>
+      </div>
+      <div class="grid-item item2">
+        <button id="button2" onclick="revealHint('Gen 5/Black & White', this.id)">Generation</button>
+      </div>
+      <div class="grid-item item3">
+        <button id="button3" onclick="revealHint('Uses the -------- on its stomach as a blade', this.id)">Vague pokedex description</button>
+      </div>
+      <div class="grid-item item4">
+        <button id="button4" onclick="revealHint('0.5m/1′08″', this.id)">Height</button>
+      </div>
+      <div class="grid-item item5">
+        <button id="button5" onclick="revealHint('blue', this.id)">Main colors</button>
+      </div>
+      <div class="grid-item item6">
+        <button id="button6" onclick="revealHint('Nubby dino', this.id)">Pokedex shape</button>
+      </div>
+      <div class="grid-item item7">
+        <button id="button7" onclick="revealHint('1st stage out of 3', this.id)">What stage of evolution</button>
+      </div>
+      <div class="grid-item item8">
+        <button id="button8" onclick="revealHint('Its got freckles!', this.id)">Random obscure feature</button>
+      </div>
+      <div class="grid-item item9">
+        <button id="button9" onclick="revealHint('Torrent, shell armor (hidden ability)', this.id)">Possible Abilities</button>
+      </div>
+    </div>
+  </body>
+</html>
